@@ -30,7 +30,7 @@ Each .c and .h file must have a standard header as defined below.  Make sure to 
 
 ```
 /**************************************************************
-* Class::  CSC-415-0# Spring 2025
+* Class::  CSC-415-0# Fall 2025
 * Name::
 * Student ID::
 * GitHub-Name::
@@ -196,7 +196,7 @@ To Do So:
         n_sec = n_sec + 1000000000L;
         }
 
-    printf("Total Time was %ld.%09ld seconds\n", sec, n_sec);
+    printf("Total Time was %ld.%09ld seconds for %s threads.\n", sec, n_sec, argv[3]);
     //**************************************************************
 
 ```
