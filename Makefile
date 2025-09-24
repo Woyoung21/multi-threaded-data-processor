@@ -61,6 +61,7 @@ OBJ = $(ROOTNAME)$(HW)$(FOPTION).o $(ADDOBJ)
 
 $(ROOTNAME)$(HW)$(FOPTION): $(OBJ)
 	$(CC) -o $@ $^ $(CFLAGS)  $(LIBS)
+	@echo "$(shell grep PRETTY_NAME /etc/os-release | cut -d= -f2 | tr -d '"'), $(shell uname -r), $(shell uname -m -n), $(shell nproc)"
 
 clean:
 	rm $(ROOTNAME)$(HW)$(FOPTION).o $(ROOTNAME)$(HW)$(FOPTION) $(ADDOBJ)
