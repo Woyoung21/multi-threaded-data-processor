@@ -33,15 +33,15 @@
 # will delete the executable and any object files in your directory.
 #
 
-FIRSTNAME=
-LASTNAME=
+FIRSTNAME=will
+LASTNAME=young
 
 ROOTNAME=$(LASTNAME)_$(FIRSTNAME)_HW
 HW=4
 FOPTION=_main
 
 # RUNOPTIONS
-RUNOPTIONS=Law500K.dat header.txt 1 police_district BAYVIEW MISSION
+RUNOPTIONS=Law5K.dat header.txt 8 police_district RICHMOND TARAVAL
 
 CC=gcc
 CFLAGS= -g -I.
@@ -52,7 +52,7 @@ ARCH = $(shell uname -m)
 
 # Add additional files here to the ADDOBJ, add the .o extension of the file only
 #     i.e. something along the line of Bierman_Robert_HW4_datastruct.o
-ADDOBJ =
+ADDOBJ = young_will_HW4_helper_functions.o
 
 OBJ = $(ROOTNAME)$(HW)$(FOPTION).o $(ADDOBJ)
 
